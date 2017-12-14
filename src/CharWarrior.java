@@ -1,2 +1,2 @@
-public class CharWarrior {
+public class CharWarrior extends Character{
 }

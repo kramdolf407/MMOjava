@@ -1,2 +1,2 @@
-public class EnemyArcher {
+public class EnemyArcher extends Enemy{
 }

@@ -1,2 +1,2 @@
-public class AccountAdmin {
+public class AccountAdmin extends Account {
 }

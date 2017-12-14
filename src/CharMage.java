@@ -1,2 +1,2 @@
-public class CharMage {
+public class CharMage extends  Character{
 }

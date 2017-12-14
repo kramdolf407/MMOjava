@@ -1,2 +1,2 @@
-public class CharHealer {
+public class CharHealer extends Character{
 }

@@ -1,2 +1,2 @@
-public class EnemyMonster {
+public class EnemyMonster extends Enemy{
 }

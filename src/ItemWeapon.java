@@ -1,2 +1,2 @@
-public class ItemWeapon {
+public class ItemWeapon extends Items{
 }
