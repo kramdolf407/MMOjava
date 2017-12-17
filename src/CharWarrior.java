@@ -3,8 +3,8 @@ import java.util.ArrayList;
 public class CharWarrior extends Character {
 
 
-    public CharWarrior(int WeaponAttack, int AbsorbDamage, int id, String name, int money, ArrayList itemArray, int strength, int speed, int health) {
-        super(id, name, money, itemArray, strength, speed, health);
+    public CharWarrior(String name, int money, ArrayList itemArray, int strength, int speed, int health) {
+        super(name, money, itemArray, strength, speed, health);
 
     }
 
