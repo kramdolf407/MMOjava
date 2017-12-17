@@ -1,30 +1,28 @@
 import java.util.ArrayList;
 
 public class Character {
-    private int id;
+    private final int id;
     private String name;
     private int money;
     private ArrayList itemArray;
     private int strength;
     private int speed;
     private int health;
+    private static int nextID = 1;
 
-    public Character(int id, String name, int money, ArrayList itemArray, int strength, int speed, int health){
-        this.id = id;
+    public Character(String name, int money, ArrayList itemArray, int strength, int speed, int health){
         this.name = name;
         this.money = money;
         this.itemArray = itemArray;
         this.strength = strength;
         this.speed = speed;
         this.health = health;
+        this.id = nextID;
+        Character.nextID ++;
     }
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {

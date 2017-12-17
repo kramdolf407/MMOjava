@@ -1,14 +1,21 @@
 public class Enemy {
 
-
+    private final int id;
     private int health;
     private int range;
     private int damage;
+    private  static int nextID = 1;
 
     public Enemy(int health, int range, int damage) {
         this.health = health;
         this.range = range;
         this.damage = damage;
+        this.id = nextID;
+        Enemy.nextID ++;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public int getHealth() {
