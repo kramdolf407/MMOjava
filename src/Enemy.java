@@ -1,5 +1,6 @@
 public class Enemy {
 
+
     private int health;
     private int range;
     private int damage;

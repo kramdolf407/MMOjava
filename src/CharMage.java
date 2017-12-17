@@ -2,38 +2,28 @@ import java.util.ArrayList;
 
 public class CharMage extends Character {
 
-    private int WhiteMagic;
-    private int BlackMagic;
-    private int AbsorbDamage;
+    //WhiteMagic;
+    //BlackMagic;
+    //AbsorbDamage;
 
     public CharMage(int WhiteMagic, int BlackMagic, int AbsorbDamage, int id, String name, int money, ArrayList itemArray, int strength, int speed, int health) {
         super(id, name, money, itemArray, strength, speed, health);
-        this.WhiteMagic = WhiteMagic;
-        this.BlackMagic = BlackMagic;
-        this.AbsorbDamage = AbsorbDamage;
     }
 
-    public int getWhiteMagic() {
-        return WhiteMagic;
+    public void whiteMagic(int friendID){
+
+        // heal friend
     }
 
-    public void setWhiteMagic(int whiteMagic) {
-        WhiteMagic = whiteMagic;
+    public void blackMagic(int enemyID){
+
+        // damage to enemy
     }
 
-    public int getBlackMagic() {
-        return BlackMagic;
-    }
+    public void absorbDamage(int damage){
 
-    public void setBlackMagic(int blackMagic) {
-        BlackMagic = blackMagic;
-    }
-
-    public int getAbsorbDamage() {
-        return AbsorbDamage;
-    }
-
-    public void setAbsorbDamage(int absorbDamage) {
-        AbsorbDamage = absorbDamage;
+        int currentHealth = this.getHealth();
+        int newHealth = currentHealth - damage;
+        this.setHealth(newHealth);
     }
 }
