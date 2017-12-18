@@ -88,8 +88,8 @@ public class Character extends Position{
         this.health = health;
     }
 
-    public void addItems(int id, String name, int cost, Boolean equipable) {
-        Items item = new Items(id,name,cost,equipable);
+    public void addItems(int id, String name, int cost, Boolean equipable, int x, int y) {
+        Items item = new Items(id,name,cost,equipable, x, y);
         this.itemArray.add(item);
     }
 }

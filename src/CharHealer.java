@@ -7,8 +7,8 @@ public class CharHealer extends Character{
     private int health = 5;
     private int money = 100;
 
-    public CharHealer(String name, int money, int strength, int speed, int health, ArrayList<Items> itemArray) {
-        super(name, money, strength, speed, health, itemArray);
+    public CharHealer(String name, int money, int strength, int speed, int health, ArrayList<Items> itemArray, int x, int y) {
+        super(name, money, strength, speed, health, itemArray, x, y);
     }
 
 
