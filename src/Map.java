@@ -3,6 +3,9 @@ import java.util.ArrayList;
 public class Map {
     private ArrayList<Items> arrayOfPositions;
 
+
+
+
     public ArrayList<Items> getArrayOfPositions() {
         return arrayOfPositions;
     }
