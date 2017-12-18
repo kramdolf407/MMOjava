@@ -2,9 +2,14 @@ import java.util.ArrayList;
 
 public class CharWarrior extends Character {
 
+    private int strength = 10;
+    private int speed = 5;
+    private int health = 10;
+    private int money = 100;
+    ArrayList<Items>itemArray;
 
-    public CharWarrior(String name, int money, ArrayList itemArray, int strength, int speed, int health) {
-        super(name, money, itemArray, strength, speed, health);
+    public CharWarrior(String name) {
+        super(name);
 
     }
 

@@ -10,15 +10,21 @@ public class Account {
     private boolean online;
     private static int nextID = 1;
 
+    public Account(String email, String password) {
+        this.email = email;
+        this.password = password;
+        this.characters = new ArrayList<>();
+        this.friends = new ArrayList<>();
+        this.id = nextID++;
+    }
+
     public Account(ArrayList<Character> characters, ArrayList<String> friends, String email, String password) {
         this.characters = characters;
         this.friends = friends;
         this.email = email;
         this.password = password;
         this.online = false;
-        this.id = nextID;
-        Account.nextID ++;
-
+        this.id = nextID++;
     }
 
     public boolean tryLogin(String email, String password) {

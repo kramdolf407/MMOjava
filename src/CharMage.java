@@ -2,8 +2,14 @@ import java.util.ArrayList;
 
 public class CharMage extends Character {
 
-    public CharMage(String name, int money, ArrayList itemArray, int strength, int speed, int health) {
-        super(name, money, itemArray, strength, speed, health);
+    private int money = 100;
+    private int strength = 3;
+    private int speed = 5;
+    private int health = 5;
+    ArrayList<Items>itemArray;
+
+    public CharMage(String name) {
+        super(name);
     }
 
     public void whiteMagic(int friendID){

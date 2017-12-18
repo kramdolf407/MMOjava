@@ -2,8 +2,14 @@ import java.util.ArrayList;
 
 public class CharHealer extends Character{
 
-    public CharHealer(String name, int money, ArrayList itemArray, int strength, int speed, int health) {
-        super(name, money, itemArray, strength, speed, health);
+    private int strength = 1;
+    private int speed = 5;
+    private int health = 5;
+    private int money = 100;
+    ArrayList<Items>itemArray;
+
+    public CharHealer(String name) {
+        super(name);
 
     }
 
