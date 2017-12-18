@@ -1,4 +1,4 @@
-public class Enemy {
+public class Enemy extends Position{
 
     private final int id;
     private int health;
@@ -6,7 +6,8 @@ public class Enemy {
     private int damage;
     private  static int nextID = 1;
 
-    public Enemy(int health, int range, int damage) {
+    public Enemy(int health, int range, int damage, int x, int y) {
+        super(x, y);
         this.health = health;
         this.range = range;
         this.damage = damage;

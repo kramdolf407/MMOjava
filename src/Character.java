@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Character {
+public class Character extends Position{
 
     private final int id;
     private String name;
@@ -12,7 +12,8 @@ public class Character {
     private static int nextID = 1;
 
 
-    public Character(String name, int money, int strength, int speed, int health){
+    public Character(String name, int money, int strength, int speed, int health, int x, int y){
+        super(x, y);
         this.name = name;
         this.money = money;
         this.strength = strength;
@@ -24,7 +25,8 @@ public class Character {
 
     }
 
-    public Character(String name, int money, int strength, int speed, int health, ArrayList<Items>itemArray){
+    public Character(String name, int money, int strength, int speed, int health, ArrayList<Items>itemArray, int x, int y){
+        super(x, y);
         this.name = name;
         this.money = money;
         this.strength = strength;
