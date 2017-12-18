@@ -10,5 +10,4 @@ public class AccountTest {
 //        boolean resultFromLogin = account.tryLogin("email@email.com","mypassword");
     //    assertEquals(resultFromLogin,true);
     }
-
 }

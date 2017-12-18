@@ -11,7 +11,6 @@ public class Character extends Position{
     private int health;
     private static int nextID = 1;
 
-
     public Character(String name, int money, int strength, int speed, int health, int x, int y){
         super(x, y);
         this.name = name;
@@ -21,8 +20,6 @@ public class Character extends Position{
         this.health = health;
         this.itemArray = new ArrayList<>();
         this.id = nextID++;
-
-
     }
 
     public Character(String name, int money, int strength, int speed, int health, ArrayList<Items> itemArray, int x, int y){
