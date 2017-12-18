@@ -1,7 +1,9 @@
 public class main {
     public static void main(String[] args) {
-        CharHealer healer1 = new CharHealer("PlayerHealah",200,222, 23424,100,"dada");
+        CharHealer healer1 = new CharHealer("New Char",1,2);
         Character myChar = healer1;
+
+
         myChar.setName("PlayerRenamed");
         Character myCharModified = (Character) myChar;
         System.out.println(myCharModified.getName());
