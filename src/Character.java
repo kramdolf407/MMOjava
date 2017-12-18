@@ -11,6 +11,7 @@ public class Character {
     private int health;
     private static int nextID = 1;
 
+
     public Character(String name, int money, int strength, int speed, int health){
         this.name = name;
         this.money = money;
@@ -19,6 +20,8 @@ public class Character {
         this.health = health;
         this.itemArray = new ArrayList<>();
         this.id = nextID++;
+
+
     }
 
     public Character(String name, int money, int strength, int speed, int health, ArrayList<Items>itemArray){
@@ -85,6 +88,6 @@ public class Character {
 
     public void addItems(int id, String name, int cost, Boolean equipable) {
         Items item = new Items(id,name,cost,equipable);
-        //items.add(Items);
+        this.itemArray.add(item);
     }
 }
