@@ -10,6 +10,15 @@ public class Account {
     private boolean online;
     private static int nextID = 1;
 
+    public Account(String email, String password) {
+        this.email = email;
+        this.password = password;
+        this.online = false;
+        this.characters = new ArrayList<>();
+        this.friends = new ArrayList<>();
+        this.id = nextID;
+        Account.nextID ++;
+    }
     public Account(ArrayList<Character> characters, ArrayList<AccountFriends> friends, String email, String password) {
         this.characters = characters;
         this.friends = friends;
@@ -18,7 +27,6 @@ public class Account {
         this.online = false;
         this.id = nextID;
         Account.nextID ++;
-
     }
 
     public boolean tryLogin(String email, String password) {
@@ -83,7 +91,6 @@ public class Account {
         }
 
     }
-
     public void addFriend(ArrayList<Character> characters, String email){
       AccountFriends newfriend = new AccountFriends(characters,email);
         this.friends.add(newfriend);
