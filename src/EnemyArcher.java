@@ -3,8 +3,8 @@ public class EnemyArcher extends Enemy{
     private int speed;
     private int strength;
 
-    public EnemyArcher(int health, int range, int damage, int speed, int strength) {
-        super(health, range, damage);
+    public EnemyArcher(int health, int range, int damage, int speed, int strength, int x, int y) {
+        super(health, range, damage, x, y);
         this.speed = speed;
         this.strength = strength;
 

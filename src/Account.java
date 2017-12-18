@@ -66,7 +66,7 @@ public class Account {
         this.friends = friends;
     }
 
-    public void addNewCharcter(String name, int money, ArrayList itemArray, int strength, int speed, int health, int x, int y){
+    public void addNewCharcter(String name, int money, ArrayList<Items> itemArray, int strength, int speed, int health, int x, int y){
        Character new_charcter = new Character(name,money,strength,speed,health,itemArray, x, y);
        this.characters.add(new_charcter);
     }

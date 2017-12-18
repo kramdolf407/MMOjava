@@ -3,8 +3,8 @@ public class EnemyKnight extends Enemy{
     private int armor;
     private int strength;
 
-    public EnemyKnight(int health, int range, int damage, int armor, int strength) {
-        super(health, range, damage);
+    public EnemyKnight(int health, int range, int damage, int armor, int strength ,int x, int y) {
+        super(health, range, damage, x, y);
         this.armor = armor;
         this.strength = strength;
 
