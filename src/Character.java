@@ -25,7 +25,7 @@ public class Character extends Position{
 
     }
 
-    public Character(String name, int money, int strength, int speed, int health, ArrayList<Items>itemArray, int x, int y){
+    public Character(String name, int money, int strength, int speed, int health, ArrayList<Items> itemArray, int x, int y){
         super(x, y);
         this.name = name;
         this.money = money;

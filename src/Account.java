@@ -21,15 +21,6 @@ public class Account {
 
     }
 
-    public Account(ArrayList<Character> characters, ArrayList<AccountFriends> friends, String email) {
-        this.characters = characters;
-        this.friends = friends;
-        this.email = email;
-        this.online = false;
-        this.id = nextID;
-        Account.nextID++;
-    }
-
     public boolean tryLogin(String email, String password) {
         if(this.email.equals(email) && this.password.equals(password) && !this.online){
             return true;
