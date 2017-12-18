@@ -8,10 +8,10 @@ public class CharWarrior extends Character {
     private int money = 100;
     ArrayList<Items>itemArray;
 
-    public CharWarrior(String name) {
-        super(name);
-
+    public CharWarrior(String name, int money, int strength, int speed, int health, ArrayList<Items> itemArray) {
+        super(name, money, strength, speed, health, itemArray);
     }
+
 
     public void weaponAttack(int enemyID){
 

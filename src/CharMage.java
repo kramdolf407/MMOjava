@@ -8,9 +8,10 @@ public class CharMage extends Character {
     private int health = 5;
     ArrayList<Items>itemArray;
 
-    public CharMage(String name) {
-        super(name);
+    public CharMage(String name, int money, int strength, int speed, int health, ArrayList<Items> itemArray) {
+        super(name, money, strength, speed, health, itemArray);
     }
+
 
     public void whiteMagic(int friendID){
 

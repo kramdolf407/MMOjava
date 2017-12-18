@@ -6,12 +6,11 @@ public class CharHealer extends Character{
     private int speed = 5;
     private int health = 5;
     private int money = 100;
-    ArrayList<Items>itemArray;
 
-    public CharHealer(String name) {
-        super(name);
-
+    public CharHealer(String name, int money, int strength, int speed, int health, ArrayList<Items> itemArray) {
+        super(name, money, strength, speed, health, itemArray);
     }
+
 
     public void healFriend(int friendID){
 
