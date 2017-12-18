@@ -1,4 +1,4 @@
-public class Items {
+public class Items extends Position {
 
     private final int id;
     private String name;
@@ -6,7 +6,8 @@ public class Items {
     private Boolean equipable;
     private static int nextID = 1;
 
-    public Items(int id, String name, int cost, Boolean equipable) {
+    public Items(int id, String name, int cost, Boolean equipable, int x, int y) {
+        super(x, y);
         this.id = nextID++;
         this.name = name;
         this.cost = cost;
