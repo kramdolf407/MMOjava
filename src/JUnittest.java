@@ -6,9 +6,10 @@ public class JUnittest {
     public void testCharHealer() {
         CharHealer myHealer = new CharHealer("New Char", 1, 2);
         myHealer.setName("PlayerRenamed");
-        Character myCharModified = (Character) myHealer;
-        System.out.println(myCharModified.getName());
-        TestUserLogin();
+
+        assertEquals(myHealer.getName(), "PlayerRenamed");
+        assertEquals(myHealer.getX(), 1);
+        assertEquals(myHealer.getY(), 2);
     }
     @Test
     public void TestUserLogin() {
