@@ -5,6 +5,5 @@ public class AccountFriends {
     public AccountFriends(ArrayList<Character> characters, String email){
 
 
-
     }
 }

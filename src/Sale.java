@@ -26,11 +26,11 @@ public class Sale {
         this.cost = cost;
     }
 
-    public String getSeller() {
+    public String getSeller()  {
         return seller;
     }
 
-    public void setSeller(String seller) {
+    public void setSeller(String seller)  {
         this.seller = seller;
     }
 }

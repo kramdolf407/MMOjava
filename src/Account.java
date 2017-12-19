@@ -79,7 +79,7 @@ public class Account {
        this.characters.add(new_charcter);
     }
 
-    public void deleteCharcter(int id_to_remove){
+    public void removeCharcter(int id_to_remove){
 
         for(int i = id_to_remove; i <= this.id; i++){
             if(i == this.id){
@@ -87,9 +87,7 @@ public class Account {
                 this.characters.remove(i);
                 break;
             }
-
         }
-
     }
     public void addFriend(ArrayList<Character> characters, String email){
       AccountFriends newfriend = new AccountFriends(characters,email);
@@ -97,3 +95,7 @@ public class Account {
     }
 
 }
+
+
+
+

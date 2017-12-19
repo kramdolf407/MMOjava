@@ -89,4 +89,7 @@ public class Character extends Position{
         Items item = new Items(id,name,cost,equipable, x, y);
         this.itemArray.add(item);
     }
+
+
+
 }
